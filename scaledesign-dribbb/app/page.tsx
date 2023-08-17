@@ -58,7 +58,7 @@ const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
 const secondNavigation = {
   categories: [
     {
-      name: "Women",
+      name: "Deals",
       featured: [
         { name: "Sleep", href: "#" },
         { name: "Swimwear", href: "#" },
@@ -86,7 +86,7 @@ const secondNavigation = {
       ],
     },
     {
-      name: "Men",
+      name: "Grocery & Essentials",
       featured: [
         { name: "Casual", href: "#" },
         { name: "Boxers", href: "#" },
@@ -115,8 +115,10 @@ const secondNavigation = {
     },
   ],
   pages: [
-    { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
+    { name: "Back to Schools", href: "#" },
+    { name: "Dorm Essentials", href: "#" },
+    { name: "Fashion", href: "#" },
+    { name: "Home", href: "#" },
   ],
 };
 const user = {
@@ -247,13 +249,13 @@ export default function Example() {
                         href="#"
                         className="-m-1.5 p-1.5 rounded-full hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-60"
                       >
-                        <span className="sr-only">Your Company</span>
+                        <span className="sr-only">Your Company123</span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="130"
                           height="32"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#FFF"
                               d="M72.22 20.02c0 .26-.02.52-.1.74a2.6 2.6 0 01-2.5 1.76c-1.02 0-1.83-.58-1.83-1.82 0-1.88 2.07-2.4 4.43-2.39v1.71zm3.7-3.28c0-3.1-1.33-5.84-5.81-5.84-2.3 0-4.13.64-5.13 1.22l.73 2.5a7.51 7.51 0 013.74-1.05c2.28 0 2.65 1.29 2.65 2.11v.2c-4.96 0-8.1 1.71-8.1 5.21 0 2.14 1.6 4.14 4.38 4.14 1.7 0 3.13-.68 3.99-1.77h.08s.57 2.37 3.7 1.46c-.17-.99-.23-2.04-.23-3.3v-4.88zM0 6.67L3.76 22.1c.6 2.52 1.69 3.45 4.82 2.82l2.03-8.23c.51-2.05.86-3.5 1.19-5.59h.05c.24 2.1.57 3.55.99 5.6l1.24 5.7c.43 1.96 1.6 3.2 4.68 2.52l4.82-18.25h-3.9l-1.64 7.89c-.45 2.3-.85 4.1-1.16 6.2h-.05c-.28-2.09-.64-3.81-1.1-6.05l-1.7-8.04H9.97L8.13 14.5c-.51 2.38-1 4.3-1.3 6.33h-.06c-.32-1.9-.74-4.33-1.2-6.63L4.1 6.67H0m30.71 13.35c0 .26-.02.52-.1.74a2.6 2.6 0 01-2.5 1.76c-1.02 0-1.83-.58-1.83-1.82 0-1.88 2.07-2.4 4.43-2.39v1.71zm3.7-3.28c0-3.1-1.32-5.84-5.8-5.84-2.3 0-4.14.64-5.14 1.22l.73 2.5a7.52 7.52 0 013.74-1.05c2.28 0 2.65 1.29 2.65 2.11v.2c-4.96 0-8.1 1.71-8.1 5.21 0 2.14 1.6 4.14 4.38 4.14 1.7 0 3.13-.68 3.99-1.77h.08s.57 2.37 3.7 1.46c-.17-.99-.23-2.04-.23-3.3v-4.88zm5.73 4.3V6.68h-3.7v18.25h3.7v-3.88M87.3 6.68v13.46c0 1.86.35 3.16 1.1 3.95.65.7 1.72 1.15 3.01 1.15 1.1 0 2.17-.2 2.68-.4l-.04-2.9c-.38.1-.82.17-1.41.17-1.26 0-1.69-.8-1.69-2.47v-5.15h3.23v-3.5h-3.23V6.67H87.3m-9.57 4.54v13.71h3.82V17.9c0-.38.03-.7.09-1.01.28-1.47 1.4-2.41 3.02-2.41.44 0 .76.04 1.1.1v-3.6a3.68 3.68 0 00-.84-.08c-1.43 0-3.05.92-3.73 2.9h-.1v-2.6h-3.36m-35.43 0v13.72H46v-8.04c0-.38.05-.78.18-1.12.3-.81 1.06-1.76 2.26-1.76 1.5 0 2.21 1.27 2.21 3.1v7.82h3.72v-8.14c0-.36.05-.8.16-1.11A2.35 2.35 0 0156.78 14c1.52 0 2.25 1.25 2.25 3.4v7.52h3.73v-8.08c0-4.25-2.17-5.94-4.6-5.94-1.09 0-1.94.27-2.71.74-.65.4-1.24.97-1.74 1.71h-.06a3.9 3.9 0 00-3.77-2.45 4.31 4.31 0 00-4 2.17h-.05v-1.86h-3.54"
@@ -469,7 +471,7 @@ export default function Example() {
               </>
             )}
           </Disclosure>
-          <div className="bg-white">
+          <div className="bg-indigo-600">
             {/* Mobile menu */}
             <Transition.Root show={open} as={Fragment}>
               <Dialog
@@ -664,7 +666,7 @@ export default function Example() {
                         ))}
                       </div>
 
-                      <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                      {/* <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                         <div className="flow-root">
                           <a
                             href="#"
@@ -681,11 +683,11 @@ export default function Example() {
                             Sign in
                           </a>
                         </div>
-                      </div>
+                      </div> */}
 
-                      <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                      {/* <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                         {/* Currency selector */}
-                        <form>
+                      {/*<form>
                           <div className="inline-block">
                             <label
                               htmlFor="mobile-currency"
@@ -712,7 +714,8 @@ export default function Example() {
                             </div>
                           </div>
                         </form>
-                      </div>
+                      </div> 
+                      */}
                     </Dialog.Panel>
                   </Transition.Child>
                 </div>
@@ -722,61 +725,9 @@ export default function Example() {
             <header className="relative">
               <nav aria-label="Top">
                 {/* Top navigation */}
-                <div className="bg-gray-900">
-                  <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-                    {/* Currency selector */}
-                    <form className="hidden lg:block lg:flex-1">
-                      <div className="flex">
-                        <label htmlFor="desktop-currency" className="sr-only">
-                          Currency
-                        </label>
-                        <div className="group relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
-                          <select
-                            id="desktop-currency"
-                            name="currency"
-                            className="flex items-center rounded-md border-transparent bg-gray-900 bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-white focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-100"
-                          >
-                            {currencies.map((currency) => (
-                              <option key={currency}>{currency}</option>
-                            ))}
-                          </select>
-                          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
-                            <ChevronDownIcon_Solid
-                              className="h-5 w-5 text-gray-300"
-                              aria-hidden="true"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-
-                    <p className="flex-1 text-center text-sm font-medium text-white lg:flex-none">
-                      Get free delivery on orders over $100
-                    </p>
-
-                    <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                      <a
-                        href="#"
-                        className="text-sm font-medium text-white hover:text-gray-100"
-                      >
-                        Create an account
-                      </a>
-                      <span
-                        className="h-6 w-px bg-gray-600"
-                        aria-hidden="true"
-                      />
-                      <a
-                        href="#"
-                        className="text-sm font-medium text-white hover:text-gray-100"
-                      >
-                        Sign in
-                      </a>
-                    </div>
-                  </div>
-                </div>
 
                 {/* Secondary navigation */}
-                <div className="bg-white">
+                <div className="bg-indigo-600">
                   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="border-b border-gray-200">
                       <div className="flex h-16 items-center justify-between">
@@ -794,7 +745,7 @@ export default function Example() {
                                             className={classNames(
                                               open
                                                 ? "border-indigo-600 text-indigo-600"
-                                                : "border-transparent text-gray-700 hover:text-gray-800",
+                                                : "border-transparent text-white hover:text-gray-800",
                                               "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                                             )}
                                           >
@@ -957,7 +908,7 @@ export default function Example() {
                                 <a
                                   key={page.name}
                                   href={page.href}
-                                  className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                                  className="flex items-center text-sm font-medium text-white hover:text-gray-800"
                                 >
                                   {page.name}
                                 </a>
@@ -992,16 +943,6 @@ export default function Example() {
                             />
                           </a>
                         </div>
-
-                        {/* Logo (lg-) */}
-                        <a href="#" className="lg:hidden">
-                          <span className="sr-only">Your Company</span>
-                          <img
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                            alt=""
-                            className="h-8 w-auto"
-                          />
-                        </a>
 
                         <div className="flex flex-1 items-center justify-end">
                           <div className="flex items-center lg:ml-8">
@@ -1047,7 +988,7 @@ export default function Example() {
                                   className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                                   aria-hidden="true"
                                 />
-                                <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
+                                <span className="ml-2 text-sm font-medium text-white group-hover:text-gray-800">
                                   0
                                 </span>
                                 <span className="sr-only">
@@ -1064,19 +1005,19 @@ export default function Example() {
               </nav>
             </header>
           </div>
-          <header className="py-10">
+          {/* <header className="py-10">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <h1 className="text-3xl font-bold tracking-tight text-white">
                 HEADER TODO
               </h1>
             </div>
-          </header>
+          </header> */}
         </div>
 
-        <main className="-mt-32">
+        <main className="-mt-32 bg-white">
           <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
             {/* Your content */}
-            <div className="card w-96 bg-base-100 shadow-xl image-full">
+            <div className="card w-96 bg-base-100 shadow-xl imageFull">
               <figure>
                 <img
                   src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
