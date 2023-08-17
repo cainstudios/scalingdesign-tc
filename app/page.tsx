@@ -431,14 +431,20 @@ export default function Example() {
                   <div className="border-t border-indigo-700 pb-3 pt-4">
                     <div className="flex items-center px-5">
                       <div className="flex-shrink-0">
-                        <img
-                          className="h-10 w-10 rounded-full"
-                          src={user.imageUrl}
-                          alt=""
-                        />
+                        <picture>
+                          <img
+                            image-full="true"
+                            className="h-10 w-10 rounded-full"
+                            src={user.imageUrl}
+                            alt=""
+                          />
+                        </picture>
                       </div>
                       <div className="ml-3">
-                        <div className="text-base font-medium text-white">
+                        <div
+                          className="text-base font-medium text-white"
+                          text-white="true"
+                        >
                           {user.name}
                         </div>
                         <div className="text-sm font-medium text-indigo-300">
@@ -1054,7 +1060,7 @@ export default function Example() {
           </div>
         </main>
       </div>
-      <footer className="bg-indigo-600 pb-32" text-white>
+      <footer className="bg-indigo-600 pb-32" text-white="true">
         <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
           <nav
             className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
