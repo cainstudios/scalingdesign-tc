@@ -1027,7 +1027,9 @@ export default function Example() {
             {/* Your content */}
             <div className="card w-96 bg-base-100 shadow-xl imageFull">
               <figure>
-                <Image width={100} height={100}
+                <Image
+                  width={100}
+                  height={100}
                   src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                   alt="Shoes"
                 />
