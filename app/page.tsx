@@ -29,6 +29,7 @@ import {
   Tab,
   Transition,
 } from "@headlessui/react";
+import { Button } from "wtf-iwommds";
 
 // const products = [
 //   { name: 'Departments', href: '#' },
@@ -1034,6 +1035,7 @@ export default function Example() {
                 <h2 className="card-title">Shoes!</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
+                  <Button label="Hey its a WTF-IWOMMDS Btn" />
                   <button className="btn btn-primary">Buy Now</button>
                 </div>
               </div>
