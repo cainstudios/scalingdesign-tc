@@ -1,9 +1,9 @@
 "use client";
 import { JSX, SVGProps, useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+// import { Dialog } from "@headlessui/react";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-// `app/dribbble/w5/page.tsx` is the UI for the `/dashboard` URL
+//`app/dribbble/w5/page.tsx` is the UI for the `/dashboard` URL
 // export default function Page() {
 //   return (
 //     <>
