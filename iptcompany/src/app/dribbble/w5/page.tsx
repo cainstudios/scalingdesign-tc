@@ -1,6 +1,7 @@
 "use client";
 import { JSX, SVGProps, useState } from "react";
-
+import {} from "@heroicons/react/24/outline";
+import {} from "@heroicons/react/20/solid";
 //`app/dribbble/w5/page.tsx` is the UI for the `/dashboard` URL
 // export default function Page() {
 //   return (
