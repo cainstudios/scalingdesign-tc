@@ -211,7 +211,7 @@ const categories = [
   {
     name: "Sales",
     href: "#",
-    imageSrc: "/imgs/108.png",
+    imageSrc: "/imgs/108sale.png",
   },
 ];
 const collections = [
