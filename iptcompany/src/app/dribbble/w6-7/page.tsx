@@ -226,17 +226,15 @@ const collections = [
   {
     name: "New Construction of the Orion Enterprise halted",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg",
+    imageSrc: "/imgs/_8cf69108-a0a4-44d5-8b80-af832aa06e3e.jpeg",
     imageAlt: "Concept image of the Orion Enterprise",
     description:
-      "Two of the $105 Tillion ships suffered embarrassing system failures recently. The Pioneer’s performance in the fleet exercise, showing off its planetary survey array, was meant to rebuild the reputation of the troubled ships. The vessel was also historic—it was the first Pioneer-class ship built, commissioned just eight years prior.",
+      "Two of the $105 tillion dollar ships suffered embarrassing system failures recently. The Pioneer’s performance in the fleet exercise, showing off its planetary survey array, was meant to rebuild the reputation of the troubled ships. The vessel was also historic—it was the first Pioneer-class ship built, commissioned just eight years prior.",
   },
   {
     name: "Space Weather Causes Launch Delays",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg",
+    imageSrc: "/imgs/_c9d4123b-459e-4e86-9f34-2b935d932abb.jpeg",
     imageAlt: "Charts depicting graph of high volitial plums",
     description:
       "CAPE STARBASE, Mars - A severe solar storm rocked the inner solar system this week, causing widespread delays and scrubs of planned launches from spaceports on Earth and Mars.",
