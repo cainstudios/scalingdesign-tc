@@ -219,30 +219,27 @@ const collections = [
     name: "Interstellar Condo Collection",
     href: "#",
     imageSrc: "/imgs/91-Interstellerhome.png",
-    imageAlt:
-      "Image of Interstellar home for sale",
+    imageAlt: "Image of Interstellar home for sale",
     description:
       "Breaking ground. New residence for the adventurous. Purchase you very own place awwway from home. Development expected to start 10/18/2134",
   },
   {
-    name: "Organized Desk Collection",
+    name: "New Construction of the Orion Enterprise halted",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg",
-    imageAlt:
-      "Natural leather mouse pad on white desk next to porcelain mug and keyboard.",
+    imageAlt: "Concept image of the Orion Enterprise",
     description:
-      "The rest of the house will still be a mess, but your desk will look great.",
+      "Two of the $105 Tillion ships suffered embarrassing system failures recently. The Pioneer’s performance in the fleet exercise, showing off its planetary survey array, was meant to rebuild the reputation of the troubled ships. The vessel was also historic—it was the first Pioneer-class ship built, commissioned just eight years prior.",
   },
   {
-    name: "Focus Collection",
+    name: "Space Weather Causes Launch Delays",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg",
-    imageAlt:
-      "Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.",
+    imageAlt: "Charts depicting graph of high volitial plums",
     description:
-      "Be more productive than enterprise project managers with a single piece of paper.",
+      "CAPE STARBASE, Mars - A severe solar storm rocked the inner solar system this week, causing widespread delays and scrubs of planned launches from spaceports on Earth and Mars.",
   },
 ];
 const footerNavigation = {
@@ -873,28 +870,28 @@ export default function Example() {
 
           <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
             {collections.map((collection) => (
-              <a
-                key={collection.name}
-                href={collection.href}
-                className="group block"
-              >
-                <div
-                  aria-hidden="true"
-                  className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
+                <a
+                  key={collection.name}
+                  href={collection.href}
+                  className="group block"
                 >
-                  <img
-                    src={collection.imageSrc}
-                    alt={collection.imageAlt}
-                    className="h-full w-full object-cover object-center"
-                  />
-                </div>
-                <h3 className="mt-4 text-base font-semibold text-gray-900">
-                  {collection.name}
-                </h3>
-                <p className="mt-2 text-sm text-gray-500">
-                  {collection.description}
-                </p>
-              </a>
+                  <div
+                    aria-hidden="true"
+                    className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
+                  >
+                    <img
+                      src={collection.imageSrc}
+                      alt={collection.imageAlt}
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <h3 className="mt-4 text-base font-semibold text-gray-900">
+                    {collection.name}
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-500">
+                    {collection.description}
+                  </p>
+                </a>
             ))}
           </div>
         </section>
