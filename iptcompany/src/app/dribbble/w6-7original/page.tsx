@@ -216,13 +216,14 @@ const categories = [
 ];
 const collections = [
   {
-    name: "Interstellar Condo Collection",
+    name: "Handcrafted Collection",
     href: "#",
-    imageSrc: "/imgs/91-Interstellerhome.png",
+    imageSrc:
+      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg",
     imageAlt:
-      "Image of Interstellar home for sale",
+      "Brown leather key ring with brass metal loops and rivets on wood table.",
     description:
-      "Breaking ground. New residence for the adventurous. Purchase you very own place awwway from home. Development expected to start 10/18/2134",
+      "Keep your phone, keys, and wallet together, so you can lose everything at once.",
   },
   {
     name: "Organized Desk Collection",
@@ -802,7 +803,7 @@ export default function Example() {
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
               <img
-                src="/imgs/98.png"
+                src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-01.jpg"
                 alt=""
                 className="h-full w-full object-cover object-center"
               />
@@ -813,43 +814,21 @@ export default function Example() {
                   id="social-impact-heading"
                   className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
                 >
-                  <span className="block sm:inline">Interplanetary Travel</span>
-                  <span className="block sm:inline"> & News </span>
+                  <span className="block sm:inline">Level up</span>
+                  <span className="block sm:inline">your desk</span>
                 </h2>
                 <p className="mt-3 text-xl text-white">
-                  Learn the latest news about space tourism and space tourist
-                  trips into outer space. IPTS looks at the growing business of
-                  space tourism.
+                  Make your desk beautiful and organized. Post a picture to
+                  social media and watch it get more likes than life-changing
+                  announcements. Reflect on the shallow nature of existence. At
+                  least you have a really nice desk setup.
                 </p>
-                <div className="mt-12 md:mt-16 xl:mt-0">
-                  <h3 className="text-sm font-medium text-white">
-                    Sign up for our newsletter
-                  </h3>
-                  <p className="mt-6 text-sm text-gray-300">
-                    The latest travel deals, savings, travel alerts, space
-                    weather with a subscription.
-                  </p>
-                  <form className="mt-2 flex sm:max-w-md">
-                    <label htmlFor="email-address" className="sr-only">
-                      Email address
-                    </label>
-                    <input
-                      id="email-address"
-                      type="text"
-                      autoComplete="email"
-                      required
-                      className="w-full min-w-0 appearance-none rounded-md border border-white bg-white px-4 py-2 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900"
-                    />
-                    <div className="ml-4 flex-shrink-0">
-                      <button
-                        type="submit"
-                        className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900"
-                      >
-                        Subscribe
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                <a
+                  href="#"
+                  className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
+                >
+                  Shop Workspace
+                </a>
               </div>
             </div>
           </div>
@@ -864,11 +843,11 @@ export default function Example() {
             id="collection-heading"
             className="text-2xl font-bold tracking-tight text-gray-900"
           >
-            Solar Weather, News & Intergalatic Travel
+            Shop by Collection
           </h2>
           <p className="mt-4 text-base text-gray-500">
-            Related Topics: SpaceX, Virgin Galactic, Incredible Space Tech,
-            International Space Station, Interstellar Travel
+            Each season, we collaborate with world-class designers to create a
+            collection inspired by the natural world.
           </p>
 
           <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
