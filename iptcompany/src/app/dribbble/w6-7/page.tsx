@@ -722,9 +722,9 @@ export default function Example() {
           </h1>
           <p className="mt-4 text-xl text-white">
             At IPTS, our mission is to boldly go where no one has gone before.
-            As the world's leading provider of interplanetary transportation, we
-            are committed to pioneering new frontiers in space travel and
-            exploration.
+            As the world&apos;s leading provider of interplanetary
+            transportation, we are committed to pioneering new frontiers in
+            space travel and exploration.
           </p>
           <a
             href="#"
@@ -935,7 +935,7 @@ export default function Example() {
                 </h2>
                 <p className="mt-3 text-xl text-white">
                   Endless tasks, limited hours, a single piece of paper. Not
-                  really a haiku, but we're doing our best here. No kanban
+                  really a haiku, but we&apos;re doing our best here. No kanban
                   boards, burndown charts, or tangled flowcharts with our Focus
                   system. Just the undeniable urge to fill empty circles.
                 </p>
