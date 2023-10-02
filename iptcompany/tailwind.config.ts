@@ -17,10 +17,12 @@ const config: Config = {
       colors: {
         'light-blue': colors.lightBlue,
         cyan: colors.cyan,
+        
       },
       backdropBlur: {
         xs: '2px',
-      }
+      },
+
     },
   },
   plugins: [],

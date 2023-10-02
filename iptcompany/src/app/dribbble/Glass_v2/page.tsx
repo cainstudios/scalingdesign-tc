@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 
-
-
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
@@ -71,12 +69,15 @@ export default function Example() {
         </div>
       </div>
       <div
-        style={{ backdropFilter: "blur(10px)" }}
-        className={`w-10/12 md:w-1/4 bg-white bg-opacity-10 rounded p-3 text-white border border-white shadow-lg`}
+        dir="ltr"
+        // style={{
+        //   backdropFilter: "blur(10px)",
+        // }}
+        className={`backdrop-blur-sm backdrop-brightness-90 hover:backdrop-blur-lg hover:backdrop-brightness-100 w-10/12 md:w-1/4 bg-white bg-opacity-10 rounded p-3 text-white border border-s-white/[.20] border-t-indigo-500/[.55] shadow-lg`}
       >
         {/* <!-- header --> */}
         <div className="w-full mb-3 pb-3 border-b border-1 border-white">
-          <h3 className="text-xl font-semibold text-shadow">Something Good</h3>
+          <h3 className="text-xl font-semibold text-shadow">1Something Good</h3>
         </div>
         {/* <!-- body --> */}
         <div>

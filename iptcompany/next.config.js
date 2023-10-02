@@ -1,6 +1,4 @@
-/** @type {import('next').NextConfig} 
- * i.pinimg.com i.postimg.cc
-*/
+/** @type {import('next').NextConfig}*/
 const nextConfig = {
     images: {
         remotePatterns: [
@@ -25,6 +23,18 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'i.postimg.cc',
+                port: '',
+                pathname: '/**/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'via.placeholder.com',
+                port: '',
+                pathname: '/**/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.pexels.com',
                 port: '',
                 pathname: '/**/**',
             },
