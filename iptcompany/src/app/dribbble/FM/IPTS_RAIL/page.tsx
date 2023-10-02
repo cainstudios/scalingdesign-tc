@@ -587,8 +587,8 @@ export default function Example() {
                                                     src={item.imageSrc}
                                                     alt={item.imageAlt}
                                                     className="object-cover object-center"
-                                                    width={100}
-                                                    height={100}
+                                                    width={1000}
+                                                    height={1500}
                                                   />
                                                 </div>
                                                 <a
@@ -655,7 +655,9 @@ export default function Example() {
 
                     {/* Logo (lg-) */}
                     <a href="#" className="lg:hidden">
-                      <span className="sr-only">Your Company</span>
+                      <span className="sr-only">
+                        Interplanetary Travel Services
+                      </span>
                       <Image
                         src="/imgs/brand/ipts_light_logo.png"
                         alt=""

@@ -216,34 +216,28 @@ const categories = [
 ];
 const collections = [
   {
-    name: "Handcrafted Collection",
+    name: "Interstellar Condo Collection",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg",
-    imageAlt:
-      "Brown leather key ring with brass metal loops and rivets on wood table.",
+    imageSrc: "/imgs/91-Interstellerhome.png",
+    imageAlt: "Image of Interstellar home for sale",
     description:
-      "Keep your phone, keys, and wallet together, so you can lose everything at once.",
+      "Breaking ground. New residence for the adventurous. Purchase you very own place awwway from home. Development expected to start 10/18/2134",
   },
   {
-    name: "Organized Desk Collection",
+    name: "New Construction of the Orion Enterprise halted",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg",
-    imageAlt:
-      "Natural leather mouse pad on white desk next to porcelain mug and keyboard.",
+    imageSrc: "/imgs/_8cf69108-a0a4-44d5-8b80-af832aa06e3e.jpeg",
+    imageAlt: "Concept image of the Orion Enterprise",
     description:
-      "The rest of the house will still be a mess, but your desk will look great.",
+      "Two of the $105 tillion dollar ships suffered embarrassing system failures recently. The Pioneer’s performance in the fleet exercise, showing off its planetary survey array, was meant to rebuild the reputation of the troubled ships. The vessel was also historic—it was the first Pioneer-class ship built, commissioned just eight years prior.",
   },
   {
-    name: "Focus Collection",
+    name: "Space Weather Causes Launch Delays",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg",
-    imageAlt:
-      "Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.",
+    imageSrc: "/imgs/_c9d4123b-459e-4e86-9f34-2b935d932abb.jpeg",
+    imageAlt: "Charts depicting graph of high volitial plums",
     description:
-      "Be more productive than enterprise project managers with a single piece of paper.",
+      "CAPE STARBASE, Mars - A severe solar storm rocked the inner solar system this week, causing widespread delays and scrubs of planned launches from spaceports on Earth and Mars.",
   },
 ];
 const footerNavigation = {
@@ -356,10 +350,11 @@ export default function Example() {
                           {category.featured.map((item) => (
                             <div key={item.name} className="group relative">
                               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                <img
+                                <Image
                                   src={item.imageSrc}
                                   alt={item.imageAlt}
                                   className="object-cover object-center"
+                                  fill
                                 />
                               </div>
                               <a
@@ -457,10 +452,12 @@ export default function Example() {
         <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
           {/**src="https://fastly.picsum.photos/id/765/4586/3439.jpg?hmac=fEWXebe7qJnaS7l20B3P3mGdXNdWFGP4XIYrWurosBs"
            */}
-          <img
+          <Image
             src="/imgs/21.png"
             alt=""
             className="h-full w-full object-cover object-center"
+            width={1000}
+            height={1000}
           />
         </div>
         <div
@@ -529,10 +526,11 @@ export default function Example() {
                     <div className="hidden lg:flex lg:flex-1 lg:items-center">
                       <a href="#">
                         <span className="sr-only">IPTS</span>
-                        <img
+                        <Image
                           className="h-16 w-auto"
                           src="/imgs/brand/ipts_light_logo.png"
                           alt=""
+                          fill
                         />
                       </a>
                     </div>
@@ -583,10 +581,11 @@ export default function Example() {
                                                 className="group relative"
                                               >
                                                 <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                                  <img
+                                                  <Image
                                                     src={item.imageSrc}
                                                     alt={item.imageAlt}
                                                     className="object-cover object-center"
+                                                    fill
                                                   />
                                                 </div>
                                                 <a
@@ -654,10 +653,11 @@ export default function Example() {
                     {/* Logo (lg-) */}
                     <a href="#" className="lg:hidden">
                       <span className="sr-only">Your Company</span>
-                      <img
+                      <Image
                         src="/imgs/brand/ipts_light_logo.png"
                         alt=""
                         className="h-16 w-auto"
+                        fill
                       />
                     </a>
 
@@ -718,7 +718,7 @@ export default function Example() {
           </h1>
           <p className="mt-4 text-xl text-white">
             At IPTS, our mission is to boldly go where no one has gone before.
-            As the world's leading provider of interplanetary transportation, we
+            As the worlds leading provider of interplanetary transportation, we
             are committed to pioneering new frontiers in space travel and
             exploration.
           </p>
@@ -764,10 +764,11 @@ export default function Example() {
                       className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
                     >
                       <span aria-hidden="true" className="absolute inset-0">
-                        <img
+                        <Image
                           src={category.imageSrc}
                           alt=""
                           className="h-full w-full object-cover object-center"
+                          fill
                         />
                       </span>
                       <span
@@ -802,10 +803,11 @@ export default function Example() {
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-01.jpg"
+              <Image
+                src="/imgs/98.png"
                 alt=""
                 className="h-full w-full object-cover object-center"
+                fill
               />
             </div>
             <div className="relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
@@ -814,21 +816,43 @@ export default function Example() {
                   id="social-impact-heading"
                   className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
                 >
-                  <span className="block sm:inline">Level up</span>
-                  <span className="block sm:inline">your desk</span>
+                  <span className="block sm:inline">Interplanetary Travel</span>
+                  <span className="block sm:inline"> & News </span>
                 </h2>
                 <p className="mt-3 text-xl text-white">
-                  Make your desk beautiful and organized. Post a picture to
-                  social media and watch it get more likes than life-changing
-                  announcements. Reflect on the shallow nature of existence. At
-                  least you have a really nice desk setup.
+                  Learn the latest news about space tourism and space tourist
+                  trips into outer space. IPTS looks at the growing business of
+                  space tourism.
                 </p>
-                <a
-                  href="#"
-                  className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
-                >
-                  Shop Workspace
-                </a>
+                <div className="mt-12 md:mt-16 xl:mt-0">
+                  <h3 className="text-sm font-medium text-white">
+                    Sign up for our newsletter
+                  </h3>
+                  <p className="mt-6 text-sm text-gray-300">
+                    The latest travel deals, savings, travel alerts, space
+                    weather with a subscription.
+                  </p>
+                  <form className="mt-2 flex sm:max-w-md">
+                    <label htmlFor="email-address" className="sr-only">
+                      Email address
+                    </label>
+                    <input
+                      id="email-address"
+                      type="text"
+                      autoComplete="email"
+                      required
+                      className="w-full min-w-0 appearance-none rounded-md border border-white bg-white px-4 py-2 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900"
+                    />
+                    <div className="ml-4 flex-shrink-0">
+                      <button
+                        type="submit"
+                        className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -843,11 +867,11 @@ export default function Example() {
             id="collection-heading"
             className="text-2xl font-bold tracking-tight text-gray-900"
           >
-            Shop by Collection
+            Solar Weather, News & Intergalatic Travel
           </h2>
           <p className="mt-4 text-base text-gray-500">
-            Each season, we collaborate with world-class designers to create a
-            collection inspired by the natural world.
+            Related Topics: SpaceX, Virgin Galactic, Incredible Space Tech,
+            International Space Station, Interstellar Travel
           </p>
 
           <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
@@ -861,10 +885,11 @@ export default function Example() {
                   aria-hidden="true"
                   className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
                 >
-                  <img
+                  <Image
                     src={collection.imageSrc}
                     alt={collection.imageAlt}
                     className="h-full w-full object-cover object-center"
+                    fill
                   />
                 </div>
                 <h3 className="mt-4 text-base font-semibold text-gray-900">
@@ -885,10 +910,11 @@ export default function Example() {
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
-              <img
+              <Image
                 src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-02.jpg"
                 alt=""
                 className="h-full w-full object-cover object-center"
+                fill
               />
             </div>
             <div className="relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
@@ -901,7 +927,7 @@ export default function Example() {
                 </h2>
                 <p className="mt-3 text-xl text-white">
                   Endless tasks, limited hours, a single piece of paper. Not
-                  really a haiku, but we're doing our best here. No kanban
+                  really a haiku, but were doing our best here. No kanban
                   boards, burndown charts, or tangled flowcharts with our Focus
                   system. Just the undeniable urge to fill empty circles.
                 </p>

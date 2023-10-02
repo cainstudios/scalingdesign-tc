@@ -1117,7 +1117,6 @@ export default function Example() {
               </div>
             </div>
           </div>
-          
 
           <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
             {/* Your content */}
@@ -1128,6 +1127,7 @@ export default function Example() {
                   height={100}
                   src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                   alt="Shoes"
+                  fill
                 />
               </figure>
 
@@ -1147,6 +1147,7 @@ export default function Example() {
                   height={300}
                   src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                   alt="Shoes"
+                  fill
                 />
               </figure>
               <div className="card-body">
