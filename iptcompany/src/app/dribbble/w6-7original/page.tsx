@@ -356,10 +356,12 @@ export default function Example() {
                           {category.featured.map((item) => (
                             <div key={item.name} className="group relative">
                               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                <img
+                                <Image
                                   src={item.imageSrc}
                                   alt={item.imageAlt}
                                   className="object-cover object-center"
+                                  width={100}
+                                  height={100}
                                 />
                               </div>
                               <a
@@ -457,10 +459,12 @@ export default function Example() {
         <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
           {/**src="https://fastly.picsum.photos/id/765/4586/3439.jpg?hmac=fEWXebe7qJnaS7l20B3P3mGdXNdWFGP4XIYrWurosBs"
            */}
-          <img
+          <Image
             src="/imgs/21.png"
             alt=""
             className="h-full w-full object-cover object-center"
+            width={1000}
+            height={1000}
           />
         </div>
         <div
@@ -529,10 +533,12 @@ export default function Example() {
                     <div className="hidden lg:flex lg:flex-1 lg:items-center">
                       <a href="#">
                         <span className="sr-only">IPTS</span>
-                        <img
+                        <Image
                           className="h-16 w-auto"
                           src="/imgs/brand/ipts_light_logo.png"
                           alt=""
+                          width={100}
+                          height={100}
                         />
                       </a>
                     </div>
@@ -583,10 +589,12 @@ export default function Example() {
                                                 className="group relative"
                                               >
                                                 <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                                  <img
+                                                  <Image
                                                     src={item.imageSrc}
                                                     alt={item.imageAlt}
                                                     className="object-cover object-center"
+                                                    width={100}
+                                                    height={100}
                                                   />
                                                 </div>
                                                 <a
@@ -654,10 +662,12 @@ export default function Example() {
                     {/* Logo (lg-) */}
                     <a href="#" className="lg:hidden">
                       <span className="sr-only">Your Company</span>
-                      <img
+                      <Image
                         src="/imgs/brand/ipts_light_logo.png"
                         alt=""
                         className="h-16 w-auto"
+                        width={100}
+                        height={100}
                       />
                     </a>
 
@@ -764,10 +774,12 @@ export default function Example() {
                       className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
                     >
                       <span aria-hidden="true" className="absolute inset-0">
-                        <img
+                        <Image
                           src={category.imageSrc}
                           alt=""
                           className="h-full w-full object-cover object-center"
+                          width={100}
+                          height={100}
                         />
                       </span>
                       <span
@@ -802,10 +814,12 @@ export default function Example() {
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
-              <img
+              <Image
                 src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-01.jpg"
                 alt=""
                 className="h-full w-full object-cover object-center"
+                width={100}
+                height={100}
               />
             </div>
             <div className="relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
@@ -861,10 +875,12 @@ export default function Example() {
                   aria-hidden="true"
                   className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
                 >
-                  <img
+                  <Image
                     src={collection.imageSrc}
                     alt={collection.imageAlt}
                     className="h-full w-full object-cover object-center"
+                    width={100}
+                    height={100}
                   />
                 </div>
                 <h3 className="mt-4 text-base font-semibold text-gray-900">
@@ -885,10 +901,12 @@ export default function Example() {
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
-              <img
+              <Image
                 src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-02.jpg"
                 alt=""
                 className="h-full w-full object-cover object-center"
+                width={100}
+                height={100}
               />
             </div>
             <div className="relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
